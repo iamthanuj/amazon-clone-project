@@ -1,7 +1,8 @@
-import { addToCart, cart } from "../data/cart.js";
+import { addToCart, cart, saveToLocalStorage } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { fomatCurrency } from "./utils/money.js";
 
+updateCartQuantity();
 let productsHTML = "";
 
 products.forEach((product) => {
